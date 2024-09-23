@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Game Lobby</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="lobby">
+        <img src="./assets/images/loginimg.png" style="width: 200px;">
+        <p id="p-welcome">Welcome to BlackJack Multiplayer</p>
+        <input id="usernameInput" placeholder="Enter your username">
+        <input id="roomIdInput" placeholder="Enter Room ID">
+        
+        <div id="div-create-join">
+            <div id="div-create">
+                <button id="createRoom" class="login-btns">Create Room</button>
+            </div>
+            <div id="div-join">
+                
+                <button id="joinRoom" class="login-btns">Join Room</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="gameRoom" style="display: none;">
+        <h3>Room ID:</h3>
+        <h2 id="roomTitle"></h2>
+        <hr>
+        <h3>Players:</h3>
+        <div id="playersList"></div><br>
+    
+        <hr>
+        <h3>Select your bet:</h3>
+        <label>
+            <input type="radio" name="betAmount" value="50"> $50
+        </label>
+        <label>
+            <input type="radio" name="betAmount" value="100"> $100
+        </label>
+        <label>
+            <input type="radio" name="betAmount" value="150"> $150
+        </label><br>
+    
+        <hr>
+        <button id="startGameButton">Start Game</button>
+        <button id="leaveRoom">Leave Room</button>
+    </div>
+
+    <div id="gameActions" style="display: none;">
+        <h3>Players' Actions</h3>
+        <div id="playersActionsList"></div>
+    </div>
+    
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>

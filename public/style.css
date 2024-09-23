@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background: url('../assets/images/mainbk.jpg');
+}
+
+#lobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#gameRoom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+   
+}
+
+input, button {
+    margin: 10px;
+    padding: 10px;
+}
+
+#div-create-join{
+    display: flex;
+    flex-direction: row;
+}
+
+#div-join{
+    display: flex;
+    flex-direction: column; 
+}
+#p-welcome{
+    font-size: x-large;
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+#createRoom{
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    transition: scale 0.5s ease, background-color 0.5s ease;
+
+}
+
+#joinRoom{
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+    transition: scale 0.5s ease, background-color 0.5s ease;
+
+}
+
+#createRoom:hover{
+    scale: 1.1;
+    background-color: rgb(1, 66, 1);
+  
+    
+}
+
+#joinRoom:hover{
+    scale: 1.1;
+    background-color: rgb(2, 2, 127);
+    
+}
+
+
+#roomTitle{
+    background-color: rgb(203, 203, 203);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.players-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+    justify-content: center; /* Center items */
+    margin: 20px 0; /* Add some margin */
+}
+
+.player-item {
+    background-color: #cbea1b; /* Light gray background */
+    color: #333; /* Text color */
+    padding: 10px;
+    margin: 5px; /* Space between items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    flex: 0 1 auto; /* Allow flexibility but not shrink */
+}
+
+#startGameButton{
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: scale 0.5s ease, background-color 0.5s ease;
+}
+
+#leaveRoom{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: scale 0.5s ease, background-color 0.5s ease;
+}
+
+#startGameButton:hover{
+    scale: 1.1;
+    background-color: rgb(3, 56, 3);
+}
+
+#leaveRoom:hover{
+    scale: 1.1;
+    background-color: rgb(131, 4, 4);
+}
+
+.player-action {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+}
+
+.player-info {
+    margin-bottom: 10px;
+}
+
+.player-cards, .player-sum {
+    font-size: 14px;
+    color: #555;
+}
+
+.your-turn {
+    color: green;
+    font-weight: bold;
+}
+
+.player-actions {
+    margin-top: 5px;
+}
+
+.action-button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
